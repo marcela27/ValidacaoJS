@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valida Campo</title>
+    <script>
+        function validacaoForm()
+        {
+            var nome = document.getElementById("nome").value;
+            if(nome != "")
+            {
+                console.log("Tamanho do campo: "+nome.length)
+            }
+            else
+            {
+                console.log("O campo esta vazio")
+            }
+
+            var endereco = document.getElementById("endereco").value;
+            if(endereco != "")
+            {
+                console.log("Tamanho do campo: "+endereco.length)
+            }
+            else
+            {
+                console.log("O campo esta vazio")
+            }
+            
+            var bairro = document.getElementById("bairro").value;
+            if(bairro != "")
+            {
+                console.log("Tamanho do campo: "+bairro.length)
+            }
+            else
+            {
+                console.log("O campo esta vazio")
+            }
+
+            var cep = document.getElementById("cep").value;
+            if(cep.length <= 8)
+            {
+                console.log("CEP VÁLIDO")
+            }
+            else
+            {
+                console.log("CEP INVÁLIDO")
+            }
+
+            var cidade = document.getElementById("cidade").value;
+            if(cidade != "")
+            {
+                console.log("Tamanho do campo: "+nome.length)
+            }
+            else
+            {
+                console.log("O campo esta vazio")
+            }
+
+            var estado = document.getElementById("estado").value;
+            if(estado != "")
+            {
+                console.log("Tamanho do campo: "+nome.length)
+            }
+            else
+            {
+                console.log("O campo esta vazio")
+            }
+
+            var telefonef = document.getElementById("telefonef").value;
+            if(telefonef.length <= 8)
+            {
+                console.log("TELEFONE VÁLIDO")
+            }
+            else
+            {
+                console.log("TELEFONE INVÁLIDO")
+            }
+
+            var celular = document.getElementById("celular").value;
+            if(celular.length <= 9)
+            {
+                console.log("CELULAR VÁLIDO")
+            }
+            else
+            {
+                console.log("CELULAR INVÁLIDO")
+            }
+
+
+            var rg = document.getElementById("rg").value;
+            if(rg.length <= 9)
+            {
+                console.log("RG VÁLIDO")
+            }
+            else
+            {
+                console.log("RG INVÁLIDO")
+            }
+
+            
+          
+                    /* VALIDAR CPF */
+            var cpf = document.getElementById("cpf").value;
+            if (cpf.length <=11)
+            {
+    	            console.log("CPF VÁLIDO");
+            }
+            else
+            {
+    	            console.log("CPF INVÁLIDO");
+    	    }
+        }
+    	   
+    	       
+
+        
+     
+    </script>
+</head>
+<body>
+    <form name="" method="" action="">
+        Nome: <input type="text" name="nome" id="nome">
+       </p> 
+        Endereço: <input type="text" name="endereco" id="endereco">
+      </p>
+        Bairro: <input type="text" name="bairro" id="bairro">
+      </p>
+        Cep: <input type="text" name="cep" id="cep">
+      </p>
+        Cidade: <input type="text" name="cidade" id="cidade">
+      </p>
+        Estado: <input type="text" name="estado" id="estado">
+      </p>
+        Telefone Fixo: <input type="text" name="telefonef" id="telefonef">
+      </p>
+        Celular: <input type="text" name="celular" id="celular">
+      </p>
+        RG: <input type="text" name="rg" id="rg">
+      </p>
+        CPF: <input type="text" name="cpf" id="cpf">
+      </p>
+        <input type="button" name="btnCadastrar" id="btnCadastrar" onclick="validacaoForm()" value="Cadastrar">
+    </form>
+</body>
+</html>
